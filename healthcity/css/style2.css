@@ -1,0 +1,293 @@
+html,
+body,
+div,
+span,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+a,
+strong,
+form,
+fieldset,
+input,
+textarea,
+select,
+lable,
+option,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0
+}
+
+.clear {
+  clear: both
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+
+.clearfix {
+  zoom: 1
+}
+
+
+body {
+  font-family: "微软雅黑";
+  /* font-size: 1em; */
+  width: 100vw;
+  height: 100vh;
+  color: #686868;
+  display: flex;
+  background-image: url(../img/bg444.jpg);
+  background-size: cover;
+}
+
+
+.fl,
+.c_item_fl {
+  float: left;
+}
+
+.fr,
+.c_item_fr {
+  float: right;
+}
+
+.clear {
+  clear: both
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  border: none
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.dsn {
+  display: none;
+}
+
+
+/* .app{background:url(../images/bodyBg.jpg) repeat left top;} */
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%
+    /* position: relative; */
+}
+
+.htop {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+.nav {
+  width: 100%;
+}
+
+.navtext {
+  word-break: break-word;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #bdd2dc;
+  font-size: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #424141;
+  background-color: #272727;
+}
+
+.section {
+  /* background-color: rgb(245, 241, 232); */
+  padding-bottom: 5rem;
+  flex-grow: 1;
+}
+
+
+.botImageList {
+  list-style: none;
+}
+
+.botImageList li {
+  float: left;
+}
+
+.botImageList .png_01 {
+  background: url("../img/S1.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_02 {
+  background: url("../img/S2.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_03 {
+  background: url("../img/S3.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_04 {
+  background: url("../img/S4.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_05 {
+  background: url("../img/S5.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_06 {
+  background: url("../img/S6.png") no-repeat;
+  background-size: cover;
+}
+
+
+.botImageList .png_07 {
+  background-position: -600px -200px;
+  background: url("../img/S7.png") no-repeat;
+  background-size: cover;
+}
+
+.botImageList .png_08 {
+  background: url("../img/S8.png") no-repeat;
+  background-size: cover;
+}
+
+.botImageList li a {
+  display: block;
+  text-align: center;
+  padding-top: 108px;
+  height: 42px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/*pc*/
+@media (min-width: 768px) {
+  .wrapper {
+    font-size: 18px;
+    position: relative;
+    margin: 0 auto;
+    color: aliceblue;
+    min-width: 768px;
+    max-width: 1200px;
+  }
+  .botImagePH {
+    display: none;
+  }
+  .botImagePC {
+    display: block;
+  }
+
+  /* .swiper-slide {
+    opacity: 0.8;
+    filter: Alpha(Opacity=80);
+    transition: all 0.5s;
+  }
+
+  .swiper-slide:hover {
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+  } */
+}
+
+
+/*phone*/
+@media screen and (orientation : portrait)  {
+  .wrapper {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .brief {
+    color: #ffffff;
+    line-height: 45px;
+  }
+  .botImagePH {
+    display: block;
+  }
+  .botImagePC {
+    display: none !important;
+  }
+
+  .botImageList li {
+    margin-top: 8px;
+    width: 100%;
+    height: 150px;
+    background-color: #7ca6b9;
+    transition: all 0.5s;
+    border-radius: 2px;
+    /* opacity: 0.8; */
+  }
+
+  .botImageList li:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (orientation : landscape) and (max-width: 1300px)  {
+  .navtext {
+    white-space:nowrap
+  }
+  .body {
+    background-size:1300px;  
+  }
+}
